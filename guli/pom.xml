@@ -13,13 +13,14 @@
 	</properties>
 
 	<modules>
-		<module>gl-coupon</module>
-		<module>gl-member</module>
-		<module>gl-order</module>
-		<module>gl-ware</module>
-		<module>gl-product</module>
-		<module>renren-fast</module>
-	</modules>
+        <module>gl-coupon</module>
+        <module>gl-member</module>
+        <module>gl-order</module>
+        <module>gl-ware</module>
+        <module>gl-product</module>
+        <module>renren-fast</module>
+        <module>gl-common</module>
+    </modules>
 
 
 </project>

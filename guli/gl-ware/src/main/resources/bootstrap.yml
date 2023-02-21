@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: bhj-ware
+  cloud:
+    nacos:
+      server-addr: 121.4.96.174:8848
+      username: nacos
+      password: 980623
+      config:
+        file-extension: yaml

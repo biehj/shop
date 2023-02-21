@@ -11,8 +11,8 @@
     <groupId>com.andy</groupId>
     <artifactId>gl-product</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>product</name>
-    <description>product</description>
+    <name>gl-product</name>
+    <description>gl-product</description>
     <properties>
         <java.version>11</java.version>
         <spring-cloud.version>2021.0.5</spring-cloud.version>
@@ -25,11 +25,30 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.cloud</groupId>
+                    <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.andy</groupId>
+            <artifactId>gl-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
